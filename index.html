@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Inclusivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0055aa;
+    }
+    nav a:focus {
+      outline: 2px solid #ff9900;
+      background-color: #f0f0f0;
+    }
+    .visually-hidden {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao Site Inclusivo</h1>
+    <nav aria-label="Menu principal">
+      <a href="#sobre" accesskey="1">Sobre</a>
+      <a href="#servicos" accesskey="2">Serviços</a>
+      <a href="#contato" accesskey="3">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Nosso objetivo é criar experiências digitais acessíveis para todos, independentemente de suas habilidades.</p>
+      <img src="https://via.placeholder.com/400x200" alt="Imagem ilustrativa de acessibilidade digital">
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Consultoria em acessibilidade</li>
+        <li>Desenvolvimento inclusivo</li>
+        <li>Testes com usuários reais</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <form aria-label="Formulário de contato">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" aria-required="true"><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" aria-required="true"><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="5" aria-required="true"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Site Inclusivo. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
